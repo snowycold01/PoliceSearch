@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="RestoreMonarchy.RocketRedist" Version="3.*" ExcludeAssets="runtime"/>
+        <PackageReference Include="ShimmyMySherbet.DiscordWebhook" Version="2.0.0" />
     </ItemGroup>
 
 </Project>
