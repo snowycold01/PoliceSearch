@@ -1,0 +1,13 @@
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\bin\Debug\net48\PoliceSearch.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\bin\Debug\net48\PoliceSearch.pdb
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\bin\Debug\net48\ShimmyMySherbet.DiscordWebhooks.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.csproj.AssemblyReference.cache
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.AssemblyInfoInputs.cache
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.AssemblyInfo.cs
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.csproj.CoreCompileInputs.cache
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.sourcelink.json
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSe.FA4D23D8.Up2Date
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\PoliceSearch\obj\Debug\net48\PoliceSearch.pdb

@@ -1,0 +1,13 @@
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\bin\Debug\net48\TrunkSearch.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\bin\Debug\net48\TrunkSearch.pdb
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\bin\Debug\net48\ShimmyMySherbet.DiscordWebhooks.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.csproj.AssemblyReference.cache
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.AssemblyInfoInputs.cache
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.AssemblyInfo.cs
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.csproj.CoreCompileInputs.cache
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.sourcelink.json
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSea.F84C9E1C.Up2Date
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.dll
+C:\Users\dogoz\RiderProjects\PoliceSearch\TrunkSearch\obj\Debug\net48\TrunkSearch.pdb
