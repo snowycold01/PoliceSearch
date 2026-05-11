@@ -6,10 +6,10 @@
 
 **Config**
 ------------------------------------
-<VehicleSearchDistance> - This is how close the player has to be to use the command
+&lt;VehicleSearchDistance&gt; - This is how close the player has to be to use the command
 
-<AlertPlayerAboutSearches> - If enabled, a message will be sent to the player in-game if their vehicle is being searched
+&lt;AlertPlayerAboutSearches&gt; - If enabled, a message will be sent to the player in-game if their vehicle is being searched
 
-<PolicePermission> - This should be the Id of the permission group that can use this command
+&lt;PolicePermission&gt; - This should be the Id of the permission group that can use this command
 
-<DiscordWebhook> - This is where the log messages will be sent
+&lt;DiscordWebhook&gt; - This is where the log messages will be sent
