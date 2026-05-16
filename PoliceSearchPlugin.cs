@@ -46,13 +46,19 @@ namespace snowycold.PoliceSearch
             if (result <= Instance.Configuration.Instance.BatteringRamChance)
             {
                 string locationName = GetNearestLocationName(structureTransform);
+                BarricadeDrop drop = BarricadeManager.FindBarricadeByRootTransform(structureTransform.root);
+                string name = drop?.asset?.itemName;
+                BarricadeData data = drop.GetServersideData();
+                CSteamID own = new CSteamID(data.owner);
+                UnturnedPlayer owner = UnturnedPlayer.FromCSteamID(own);
+                
                 ThreadHelper.RunAsynchronously(async () =>
                 {
                     var message = new WebhookMessage()
                         .PassEmbed()
                         .WithTitle("Door Raided")
                         .WithColor(EmbedColor.White)
-                        .WithField("", $"{player.DisplayName} ({player.CSteamID.m_SteamID.ToString()}) raided {structureTransform.name} near {locationName}!")
+                        .WithField("", $"{player.DisplayName} ({player.CSteamID.m_SteamID.ToString()}) raided {owner.DisplayName}'s ({owner.CSteamID}) {name} near {locationName}!")
                         .WithTimestamp(DateTime.Now);
 
                     var send = message.Finalize();
