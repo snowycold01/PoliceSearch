@@ -91,7 +91,7 @@ public class OnTrunkClose
                     .WithTimestamp(DateTime.Now);
 
                 var send = message.Finalize();
-                await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.DiscordWebhook, send);
+                await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.VehicleSearchWebhook, send);
             });
         }
 
@@ -110,7 +110,7 @@ public class OnTrunkClose
                     .WithTimestamp(DateTime.Now);
 
                 var send = message.Finalize();
-                await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.DiscordWebhook, send);
+                await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.VehicleSearchWebhook, send);
             });   
         }
     }

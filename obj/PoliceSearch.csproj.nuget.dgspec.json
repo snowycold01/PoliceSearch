@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj": {}
+    "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj": {
+    "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj",
+        "projectUniqueName": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj",
         "projectName": "PoliceSearch",
-        "projectPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj",
+        "projectPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj",
         "packagesPath": "C:\\Users\\dogoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\obj\\",
+        "outputPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dogoz\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net48": {
@@ -60,7 +60,7 @@
               "version": "[2.0.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\dogoz\\.dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

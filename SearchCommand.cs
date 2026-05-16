@@ -42,7 +42,7 @@ public class SearchCommand : IRocketCommand
                             .WithTimestamp(DateTime.Now);
 
                         var send = message.Finalize();
-                        await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.DiscordWebhook, send);
+                        await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.VehicleSearchWebhook, send);
                     });
                 }
 
@@ -59,7 +59,7 @@ public class SearchCommand : IRocketCommand
                             .WithTimestamp(DateTime.Now);
 
                         var send = message.Finalize();
-                        await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.DiscordWebhook, send);
+                        await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.VehicleSearchWebhook, send);
                     });
                 }
                 
@@ -85,10 +85,67 @@ public class SearchCommand : IRocketCommand
                 PoliceSearchPlugin.Instance.StartCoroutine(OnTrunkClose.WaitForTrunkClose(player, vehicle, tempObject, itemsBefore));
             }
         }
+        
+        else if (Physics.Raycast(ray, out hit, PoliceSearchPlugin.Instance.Configuration.Instance.VehicleSearchDistance,
+                     RayMasks.BARRICADE_INTERACT))
+        {
+            InteractableStorage interactableStorage = hit.transform.GetComponent<InteractableStorage>();
+            if (interactableStorage == null) interactableStorage = hit.transform.GetComponent<InteractableStorage>();
+            if (interactableStorage != null)
+            {
+                BarricadeDrop drop = BarricadeManager.FindBarricadeByRootTransform(hit.transform.root);
+                if (drop == null) return;
+
+                if (drop.asset is ItemStorageAsset)
+                {
+                    BarricadeData data = drop.GetServersideData();
+                    UnturnedPlayer owner = UnturnedPlayer.FromCSteamID(new CSteamID(data.owner));
+
+                    if (data.owner != 0)
+                    {
+                        ThreadHelper.RunAsynchronously(async () =>
+                        {
+                            var message = new WebhookMessage()
+                                .PassEmbed()
+                                .WithTitle("Storage Searched!")
+                                .WithColor(EmbedColor.White)
+                                .WithField("", $"{player.DisplayName} ({player.CSteamID.m_SteamID}) searched {owner.DisplayName} ({data.owner})'s {drop.asset.itemName}!")
+                                .WithTimestamp(DateTime.Now);
+
+                            var send = message.Finalize();
+                            await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.BarricadeSearchWebhook, send);
+                        });
+                    }
+
+                    else
+                    {
+                        ThreadHelper.RunAsynchronously(async () =>
+                        {
+                            var message = new WebhookMessage()
+                                .PassEmbed()
+                                .WithTitle("Storage Searched!")
+                                .WithColor(EmbedColor.White)
+                                .WithField("", $"{player.DisplayName} ({player.CSteamID.m_SteamID}) searched an unowned {drop.asset.itemName}!")
+                                .WithTimestamp(DateTime.Now);
+
+                            var send = message.Finalize();
+                            await DiscordWebhookService.PostMessageAsync(PoliceSearchPlugin.Instance.Configuration.Instance.BarricadeSearchWebhook, send);
+                        });
+                    }
+                    
+                    player.Player.inventory.openStorage(interactableStorage);
+                    List<ItemJar> beforeItems = interactableStorage.items.items
+                        .Select(jar => new ItemJar(jar.x, jar.y, jar.rot, new Item(jar.item.id, jar.item.amount, jar.item.quality, jar.item.state)))
+                        .ToList();
+                    PoliceSearchPlugin.Instance.StartCoroutine(OnBarricadeClose.WaitForBarricadeClose(player, interactableStorage, beforeItems, drop));
+                }
+            }
+        }
         else
         {
-            UnturnedChat.Say("You are looking at something but not a vehicle");
+            UnturnedChat.Say("Nothing has been searched");
         }
+            
     }
 
     public AllowedCaller AllowedCaller => AllowedCaller.Player;

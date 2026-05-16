@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PoliceSearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8bf3be013a418dbdd7ec06aa72b01c37a4216ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14a7e558fa41e0aeee3330824f009ac6381337fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("PoliceSearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PoliceSearch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Mf5rFc0jxTo=",
+  "dgSpecHash": "doOA495O0Lc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj",
+  "projectFilePath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dogoz\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
     "C:\\Users\\dogoz\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512",
     "C:\\Users\\dogoz\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\dogoz\\.nuget\\packages\\restoremonarchy.rocketredist\\3.26.1.1\\restoremonarchy.rocketredist.3.26.1.1.nupkg.sha512",
-    "C:\\Users\\dogoz\\.nuget\\packages\\restoremonarchy.unturnedredist\\3.26.1.1\\restoremonarchy.unturnedredist.3.26.1.1.nupkg.sha512",
+    "C:\\Users\\dogoz\\.nuget\\packages\\restoremonarchy.rocketredist\\3.26.3.2\\restoremonarchy.rocketredist.3.26.3.2.nupkg.sha512",
+    "C:\\Users\\dogoz\\.nuget\\packages\\restoremonarchy.unturnedredist\\3.26.3.2\\restoremonarchy.unturnedredist.3.26.3.2.nupkg.sha512",
     "C:\\Users\\dogoz\\.nuget\\packages\\shimmymysherbet.discordwebhook\\2.0.0\\shimmymysherbet.discordwebhook.2.0.0.nupkg.sha512",
     "C:\\Users\\dogoz\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\dogoz\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",

@@ -27,10 +27,10 @@
           }
         }
       },
-      "RestoreMonarchy.RocketRedist/3.26.1.1": {
+      "RestoreMonarchy.RocketRedist/3.26.3.2": {
         "type": "package",
         "dependencies": {
-          "RestoreMonarchy.UnturnedRedist": "3.26.1.1"
+          "RestoreMonarchy.UnturnedRedist": "3.26.3.2"
         },
         "compile": {
           "lib/net48/Rocket.API.dll": {},
@@ -41,7 +41,7 @@
           "lib/net48/_._": {}
         }
       },
-      "RestoreMonarchy.UnturnedRedist/3.26.1.1": {
+      "RestoreMonarchy.UnturnedRedist/3.26.3.2": {
         "type": "package",
         "compile": {
           "lib/net48/Assembly-CSharp.dll": {
@@ -660,10 +660,10 @@
         "packageIcon.png"
       ]
     },
-    "RestoreMonarchy.RocketRedist/3.26.1.1": {
-      "sha512": "G6vpQ5QaeGjWFNJSNfYkL1UjzOU5aBjSIz1aU745DGyot6KJpzyylEC2+V5uv8pZUpjE5ggTctgqaarv6DLj/g==",
+    "RestoreMonarchy.RocketRedist/3.26.3.2": {
+      "sha512": "GRnAj1wsssyk1DgcHqV/aSOLRwC5u16IT6BHq61YymPNj6eZomc22LCrj1tG9MOrlQy96yyR+ta202FZSBDqlw==",
       "type": "package",
-      "path": "restoremonarchy.rocketredist/3.26.1.1",
+      "path": "restoremonarchy.rocketredist/3.26.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -673,14 +673,14 @@
         "lib/net48/Rocket.API.dll",
         "lib/net48/Rocket.Core.dll",
         "lib/net48/Rocket.Unturned.dll",
-        "restoremonarchy.rocketredist.3.26.1.1.nupkg.sha512",
+        "restoremonarchy.rocketredist.3.26.3.2.nupkg.sha512",
         "restoremonarchy.rocketredist.nuspec"
       ]
     },
-    "RestoreMonarchy.UnturnedRedist/3.26.1.1": {
-      "sha512": "iBjoFRv/sLvnIqcxwEUQzLc5gcpa7UobWcTFt86NMYRdASx3vSVfxIN3ZRSEd7Y+BVWoYnaPC+wwJ+pCFrIC5g==",
+    "RestoreMonarchy.UnturnedRedist/3.26.3.2": {
+      "sha512": "Gnw8vaod+EGZmq4H9ONGszF6O9B/BWi6AKpMQolUC2Bs9YZ5LGJfO4Joug2piOoyiidisBKFN9Mumo2RyyBaDg==",
       "type": "package",
-      "path": "restoremonarchy.unturnedredist/3.26.1.1",
+      "path": "restoremonarchy.unturnedredist/3.26.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -697,7 +697,7 @@
         "lib/net48/UnityEx.dll",
         "lib/net48/UnturnedDat.dll",
         "lib/net48/com.rlabrecque.steamworks.net.dll",
-        "restoremonarchy.unturnedredist.3.26.1.1.nupkg.sha512",
+        "restoremonarchy.unturnedredist.3.26.3.2.nupkg.sha512",
         "restoremonarchy.unturnedredist.nuspec"
       ]
     },
@@ -1114,11 +1114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj",
+      "projectUniqueName": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj",
       "projectName": "PoliceSearch",
-      "projectPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\PoliceSearch.csproj",
+      "projectPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch.csproj",
       "packagesPath": "C:\\Users\\dogoz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\PoliceSearch\\obj\\",
+      "outputPath": "C:\\Users\\dogoz\\RiderProjects\\PoliceSearch\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dogoz\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1145,7 +1145,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net48": {
@@ -1167,7 +1167,7 @@
             "version": "[2.0.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\dogoz\\.dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

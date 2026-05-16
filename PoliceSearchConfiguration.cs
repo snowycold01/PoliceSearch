@@ -9,14 +9,16 @@ namespace snowycold.PoliceSearch
         public float VehicleSearchDistance { get; set; }
         public bool AlertPlayerAboutSearches { get; set; }
         public string PolicePermission { get; set; }
-        public string DiscordWebhook { get; set; }
+        public string VehicleSearchWebhook { get; set; }
+        public string BarricadeSearchWebhook { get; set; }
 
         public void LoadDefaults()
         {
             VehicleSearchDistance = 10f;
             AlertPlayerAboutSearches =  true;
             PolicePermission = "Police";
-            DiscordWebhook = "<URLHookHere>";
+            VehicleSearchWebhook = "URLHookHere";
+            VehicleSearchWebhook = "BarricadeSearchWebhook";
         }
     }
 }
