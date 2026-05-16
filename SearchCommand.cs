@@ -153,5 +153,5 @@ public class SearchCommand : IRocketCommand
     public string Help => "Use this command to search a player or vehicle";
     public string Syntax => "";
     public List<string> Aliases => new List<string>();
-    public List<string> Permissions => [PoliceSearchPlugin.Instance.Configuration.Instance.PolicePermission];
+    public List<string> Permissions => [PoliceSearchPlugin.Instance.Configuration.Instance.SearchPermission];
 }

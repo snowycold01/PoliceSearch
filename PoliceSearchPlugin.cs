@@ -1,4 +1,5 @@
-﻿using Rocket.Core.Plugins;
+﻿using Rocket.API;
+using Rocket.Core.Plugins;
 using Rocket.Unturned.Player;
 using SDG.Unturned;
 using Steamworks;
@@ -26,8 +27,9 @@ namespace snowycold.PoliceSearch
         
         public void onDamageBarricadeRequested(CSteamID instigatorSteamID, Transform structureTransform, ref ushort pendingTotalDamage, ref bool shouldAllow, EDamageOrigin damageOrigin)
         {
-            shouldAllow = false;
             UnturnedPlayer player = UnturnedPlayer.FromCSteamID(instigatorSteamID);
+
+            if (!player.HasPermission(Instance.Configuration.Instance.BatteringRamPermission)) return;
             ushort itemHeld = player.Player.equipment.itemID;
             Interactable component = structureTransform.GetComponent<Interactable>();
             if (component == null || structureTransform.GetComponent<InteractableDoor>() == null || itemHeld != Instance.Configuration.Instance.BatteringRamID || !(component is InteractableDoor))

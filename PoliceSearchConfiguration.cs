@@ -11,7 +11,8 @@ namespace snowycold.PoliceSearch
         public float VehicleSearchDistance { get; set; }
         public float BarricadeSearchDistance { get; set; }
         public bool AlertPlayerAboutSearches { get; set; }
-        public string PolicePermission { get; set; }
+        public string SearchPermission { get; set; }
+        public string BatteringRamPermission { get; set; }
         public string VehicleSearchWebhook { get; set; }
         public string BarricadeSearchWebhook { get; set; }
 
@@ -22,7 +23,8 @@ namespace snowycold.PoliceSearch
             VehicleSearchDistance = 10f;
             BarricadeSearchDistance = 10f;
             AlertPlayerAboutSearches =  true;
-            PolicePermission = "Police";
+            SearchPermission = "Police";
+            BatteringRamPermission = "BatteringRam";
             VehicleSearchWebhook = "URLHookHere";
             BarricadeSearchWebhook = "URLHookHere";
         }
