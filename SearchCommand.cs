@@ -86,7 +86,7 @@ public class SearchCommand : IRocketCommand
             }
         }
         
-        else if (Physics.Raycast(ray, out hit, PoliceSearchPlugin.Instance.Configuration.Instance.VehicleSearchDistance,
+        else if (Physics.Raycast(ray, out hit, PoliceSearchPlugin.Instance.Configuration.Instance.BarricadeSearchDistance,
                      RayMasks.BARRICADE_INTERACT))
         {
             InteractableStorage interactableStorage = hit.transform.GetComponent<InteractableStorage>();
