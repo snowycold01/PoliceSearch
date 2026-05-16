@@ -56,7 +56,7 @@ namespace snowycold.PoliceSearch
                         .WithTimestamp(DateTime.Now);
 
                     var send = message.Finalize();
-                    await DiscordWebhookService.PostMessageAsync(Instance.Configuration.Instance.VehicleSearchWebhook, send);
+                    await DiscordWebhookService.PostMessageAsync(Instance.Configuration.Instance.BatteringRamWebhook, send);
                 });
                 ToggleDoor(player, structureTransform);
             }
