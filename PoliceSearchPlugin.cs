@@ -10,12 +10,12 @@ namespace snowycold.PoliceSearch
         protected override void Load()
         {
             Instance = this;
-            Logger.Log("PoliceSearch Plugin loaded");
+            Logger.Log("\n-=-=-=-Faction Manager v1.0.1-=-=-=-\n-=-By: snowycold-=-=-\n-=-=-=-Has Been Loaded-=-=-=-");
         }
 
         protected override void Unload()
         {
-            Logger.Log("PoliceSearch Plugin unloaded");
+            Logger.Log("\n-=-=-=-Faction Manager v1.0.0-=-=-=-\n-=-By: snowycold-=-=-\n-=-=-=-Has Been Unloaded-=-=-=-");
         }
     }
 }

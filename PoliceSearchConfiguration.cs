@@ -18,7 +18,7 @@ namespace snowycold.PoliceSearch
             AlertPlayerAboutSearches =  true;
             PolicePermission = "Police";
             VehicleSearchWebhook = "URLHookHere";
-            VehicleSearchWebhook = "BarricadeSearchWebhook";
+            BarricadeSearchWebhook = "URLHookHere";
         }
     }
 }
