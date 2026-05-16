@@ -15,13 +15,13 @@ namespace snowycold.PoliceSearch
         protected override void Load()
         {
             Instance = this;
-            Logger.Log("\n-=-=-=-Faction Manager v1.0.1-=-=-=-\n-=-By: snowycold-=-=-\n-=-=-=-Has Been Loaded-=-=-=-");
+            Logger.Log("\n-=-=-=-Police Search v1.0.2-=-=-=-\n-=-By: snowycold-=-=-\n-=-=-=-Has Been Loaded-=-=-=-");
             BarricadeManager.onDamageBarricadeRequested += new DamageBarricadeRequestHandler(this.onDamageBarricadeRequested);
         }
 
         protected override void Unload()
         {
-            Logger.Log("\n-=-=-=-Faction Manager v1.0.0-=-=-=-\n-=-By: snowycold-=-=-\n-=-=-=-Has Been Unloaded-=-=-=-");
+            Logger.Log("\n-=-=-=-Police Search v1.0.2-=-=-=-\n-=-By: snowycold-=-=-\n-=-=-=-Has Been Unloaded-=-=-=-");
             BarricadeManager.onDamageBarricadeRequested -= new DamageBarricadeRequestHandler(this.onDamageBarricadeRequested);
         }
         
@@ -38,7 +38,6 @@ namespace snowycold.PoliceSearch
             }
 
             int result = Random.Range(1, 101);
-            print(result);
             if (result <= Instance.Configuration.Instance.BatteringRamChance)
             {
                 ToggleDoor(player, structureTransform);
@@ -50,7 +49,6 @@ namespace snowycold.PoliceSearch
             InteractableDoor component = structureTransform.GetComponent<InteractableDoor>();
             if (component == null)
             {
-                Logger.Log("anotha one");
                 return;
             }
 
