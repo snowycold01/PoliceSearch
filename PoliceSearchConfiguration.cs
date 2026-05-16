@@ -15,6 +15,7 @@ namespace snowycold.PoliceSearch
         public string BatteringRamPermission { get; set; }
         public string VehicleSearchWebhook { get; set; }
         public string BarricadeSearchWebhook { get; set; }
+        public string BatteringRamWebhook { get; set; }
 
         public void LoadDefaults()
         {
@@ -27,6 +28,7 @@ namespace snowycold.PoliceSearch
             BatteringRamPermission = "BatteringRam";
             VehicleSearchWebhook = "URLHookHere";
             BarricadeSearchWebhook = "URLHookHere";
+            BatteringRamWebhook = "URLHookHere";
         }
     }
 }

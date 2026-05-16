@@ -1,10 +1,15 @@
-﻿using Rocket.API;
+﻿using System;
+using System.Linq;
+using Rocket.API;
 using Rocket.Core.Plugins;
 using Rocket.Unturned.Player;
 using SDG.Unturned;
+using ShimmyMySherbet.DiscordWebhooks.Embeded;
+using snowycold.PoliceSearch.Helpers;
 using Steamworks;
 using UnityEngine;
 using Logger = Rocket.Core.Logging.Logger;
+using Random = UnityEngine.Random;
 
 namespace snowycold.PoliceSearch
 {
@@ -40,6 +45,19 @@ namespace snowycold.PoliceSearch
             int result = Random.Range(1, 101);
             if (result <= Instance.Configuration.Instance.BatteringRamChance)
             {
+                string locationName = GetNearestLocationName(structureTransform);
+                ThreadHelper.RunAsynchronously(async () =>
+                {
+                    var message = new WebhookMessage()
+                        .PassEmbed()
+                        .WithTitle("Door Raided")
+                        .WithColor(EmbedColor.White)
+                        .WithField("", $"{player.DisplayName} ({player.CSteamID.m_SteamID.ToString()}) raided {structureTransform.name} near {locationName}!")
+                        .WithTimestamp(DateTime.Now);
+
+                    var send = message.Finalize();
+                    await DiscordWebhookService.PostMessageAsync(Instance.Configuration.Instance.VehicleSearchWebhook, send);
+                });
                 ToggleDoor(player, structureTransform);
             }
         }
@@ -53,6 +71,24 @@ namespace snowycold.PoliceSearch
             }
 
             BarricadeManager.ServerSetDoorOpen(component, !component.isOpen);
+        }
+        
+        public static string GetNearestLocationName(Transform transform)
+        {
+            LocationNode nearest = null;
+            float nearestDistance = float.MaxValue;
+
+            foreach (LocationNode node in LevelNodes.nodes.OfType<LocationNode>())
+            {
+                float distance = Vector3.Distance(transform.position, node.point);
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    nearest = node;
+                }
+            }
+
+            return nearest != null ? nearest.name : "Unknown";
         }
     }
 }
