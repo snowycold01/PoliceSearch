@@ -6,6 +6,8 @@ namespace snowycold.PoliceSearch
     {
         public static PoliceSearchConfiguration Instance { get; private set; }
         
+        public int BatteringRamChance { get; set; }
+        public ushort BatteringRamID { get; set; }
         public float VehicleSearchDistance { get; set; }
         public float BarricadeSearchDistance { get; set; }
         public bool AlertPlayerAboutSearches { get; set; }
@@ -15,6 +17,8 @@ namespace snowycold.PoliceSearch
 
         public void LoadDefaults()
         {
+            BatteringRamChance = 25;
+            BatteringRamID = 15090;
             VehicleSearchDistance = 10f;
             BarricadeSearchDistance = 10f;
             AlertPlayerAboutSearches =  true;
